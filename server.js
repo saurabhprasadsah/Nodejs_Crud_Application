@@ -103,6 +103,7 @@ console.log("notes server is avalible");
 //console.log(typeof json);
 
 
+/* create server with express */
 
 const express = require('express')
 const app = express()
