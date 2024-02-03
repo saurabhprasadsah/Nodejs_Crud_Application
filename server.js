@@ -147,6 +147,15 @@ console.log("notes server is avalible");
 // })   //address of waiter
 
 
+const express = require('express')
+const app = express()
+
+
+app.listen(3000,function() {
+
+    console.log("server is listning in this port number");
+})
+
 
 
 
