@@ -112,16 +112,7 @@ console.log("notes server is avalible");
 //   res.send('welcome to my how can i help you! ')           // menu of hotel 
 // })
 
-// app.get('/chicken', function (req,res)  {
-//     var samosa ={
-//         name: "samosa",
-//         size: 10,
-//         price : 20,
-//         hotelname:"sahusahebhotelandcompany"
-//     }
-//     res.send(samosa)
-// })
-
+//  
 
 
 // app.get('/saurabh', function (req,res){
@@ -151,8 +142,23 @@ const express = require('express')
 const app = express()
 const db = require('./db')
 
-app.listen(3000,function() {
 
+app.get('/',function(req,res){
+
+    console.log("Get request will be connected succesfully !");
+})
+
+
+app.get('/chicken', function (req,res)  {
+    var samosa ={
+        name: "samosa",
+        size: 10,
+        price : 20,
+        hotelname:"sahusahebhotelandcompany"
+    }
+    res.send(samosa)
+})
+app.listen(3000,function() {
     console.log("server is listning in this port number");
 })
 
