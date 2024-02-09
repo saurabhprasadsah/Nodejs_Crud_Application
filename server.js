@@ -146,6 +146,7 @@ app.get('/',function(req,res){
     console.log("Get request will be connected succesfully !");
 })
 
+
 app.get('/chicken', function (req,res)  {
     var samosa ={
         name: "samosa",
@@ -155,6 +156,7 @@ app.get('/chicken', function (req,res)  {
     }
     res.send(samosa)
 })
+
 
 app.listen(3000,function() {
     console.log("server is listning in this port number");
