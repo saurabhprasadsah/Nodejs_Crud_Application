@@ -18,9 +18,7 @@
 
  })
 
-
  app.post('/details', function (req,res){
-
       res.send("details data has been saved")
   })
 
