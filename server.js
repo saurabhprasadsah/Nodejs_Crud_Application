@@ -1,11 +1,8 @@
 const express = require('express')
 const app = express()
-
-
 app.get('/', function (req, res) {
     res.send('welcome to my how can i help you! ')
 })
-
 app.get('/saurabh', function (req, res) {
     var details = {
         name: "Saurabh Kumar",
